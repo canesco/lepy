@@ -14,22 +14,22 @@ HOW TO USE THE SKELETON
 6. Rename tests/NAME_tests.py to module name.
 7. Write tests
 8. Double check it's all working by *nosetests*.
-9. Start coding in module.py
+9. Start coding in <module>.py
 
-=======================================================================
+================================================================================
 TESTING GUIDELINES
 ==================
 - test files go to tests/ and are named xy_tests.py
 - one test file for each module
 - keep test cases (functions) short
 
-========================================================================
+================================================================================
 CREATE AN ARCHIVE FILE FOR DISTRIBUTION
 =======================================
 terminal: python setup.py sdist (creating tar.gz for sharing)
---> download, unpack, install:
+--> download, unpack, install ([sudo] pip install <package>)
 
-========================================================================
+================================================================================
 INSTALLING & USING THE PACKAGE
 ==============================
 - go to directory
@@ -37,7 +37,17 @@ INSTALLING & USING THE PACKAGE
 - scripts should now be callable from everywhere
 - start python --> from package import module --> module.function(x,y) etc.
 
-=========================================================================
+================================================================================
 REMOVING PACKAGE
 ================
 pip uninstall *package*
+
+================================================================================
+INITIALIZING PROJECT STRUCTURE VIA TERMINAL
+===========================================
+cd projects
+mkdir myProj
+cd myProj
+mkdir bin myProj tests docs templates
+touch myProj/__init__.py
+touch myProj/__init__.py
